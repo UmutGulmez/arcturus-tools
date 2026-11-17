@@ -70,6 +70,15 @@ export const tools: Tool[] = [
     status: "planned",
   },
   {
+    slug: "ucus-analizi",
+    name: "OpenRocket Uçuş Analizi",
+    description:
+      "OpenRocket simülasyon CSV'sini yükle; irtifa, hız, stabilite, itki ve yörünge grafikleri, KPI kartları ve karşılaştırma. Dosya tarayıcıdan çıkmaz.",
+    category: "Uçuş & Aerodinamik",
+    icon: "lucide:chart-line",
+    status: "ready",
+  },
+  {
     slug: "atmosfer",
     name: "Atmosfer Modeli",
     description: "İrtifaya göre basınç, sıcaklık, yoğunluk.",
