@@ -27,6 +27,14 @@ export const tools: Tool[] = [
     status: "ready",
   },
   {
+    slug: "parasut-olusturucu",
+    name: "Paraşüt Kalıp Oluşturucu",
+    description: "Dilim kesim kalıbı, 1:1 PDF ve DXF, kumaş ve kordon hesabı.",
+    category: "Kurtarma",
+    icon: "lucide:scissors",
+    status: "ready",
+  },
+  {
     slug: "parasut-dayanim",
     name: "Paraşüt Dayanım Hesaplayıcı",
     description: "Açılma şoku, ip ve kumaş dayanım analizi.",
