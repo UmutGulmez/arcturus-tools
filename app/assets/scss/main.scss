@@ -102,3 +102,31 @@ summary::-webkit-details-marker {
     transition-duration: 0.01ms !important;
   }
 }
+
+// ---- Yazdırma (uçuş analizi "Rapor görünümü")
+@page {
+  size: A4;
+  margin: 12mm;
+}
+
+@media print {
+  aside,
+  .no-print,
+  .timebar {
+    display: none !important;
+  }
+
+  body {
+    background: #fff !important;
+    color: #18181b !important;
+  }
+
+  main {
+    padding: 0 !important;
+  }
+
+  .report-sheet {
+    padding: 0 !important;
+    border-radius: 0 !important;
+  }
+}

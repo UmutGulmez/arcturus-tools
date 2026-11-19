@@ -25,6 +25,18 @@ export function downloadText(filename: string, text: string, mime: string): void
   setTimeout(() => URL.revokeObjectURL(url), 1000)
 }
 
+/** İkili dosya indirir (PDF vb.). */
+export function downloadBytes(filename: string, bytes: Uint8Array, mime: string): void {
+  const url = URL.createObjectURL(new Blob([bytes as BlobPart], { type: mime }))
+  const a = document.createElement('a')
+  a.href = url
+  a.download = filename
+  document.body.appendChild(a)
+  a.click()
+  a.remove()
+  setTimeout(() => URL.revokeObjectURL(url), 1000)
+}
+
 export function summaryRows(a: Analysis, mc?: McResult | null, sim?: SimResult | null): Cell[][] {
   const { inputs: i, result: r } = a
   const rows: Cell[][] = [

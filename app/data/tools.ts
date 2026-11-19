@@ -27,6 +27,14 @@ export const tools: Tool[] = [
     status: "ready",
   },
   {
+    slug: "parasut-olusturucu",
+    name: "Paraşüt Kalıp Oluşturucu",
+    description: "Dilim kesim kalıbı, 1:1 PDF ve DXF, kumaş ve kordon hesabı.",
+    category: "Kurtarma",
+    icon: "lucide:scissors",
+    status: "ready",
+  },
+  {
     slug: "parasut-dayanim",
     name: "Paraşüt Dayanım Hesaplayıcı",
     description: "Açılma şoku, ip ve kumaş dayanım analizi.",
@@ -41,6 +49,15 @@ export const tools: Tool[] = [
       "Friis/FSPL, parçalı kayıp modeli, LoRa hassasiyeti, link marjı, menzil, airtime ve veri bütçesi.",
     category: "Aviyonik",
     icon: "lucide:radio-tower",
+    status: "ready",
+  },
+  {
+    slug: "pcb-hesaplayici",
+    name: "PCB Hesaplayıcı Paketi",
+    description:
+      "İz genişliği/akım (IPC-2221), via, empedans, ısıl ve devre yardımcıları.",
+    category: "Aviyonik",
+    icon: "lucide:circuit-board",
     status: "ready",
   },
   {
@@ -68,6 +85,15 @@ export const tools: Tool[] = [
     category: "Elektronik",
     icon: "lucide:battery-charging",
     status: "planned",
+  },
+  {
+    slug: "ucus-analizi",
+    name: "OpenRocket Uçuş Analizi",
+    description:
+      "OpenRocket simülasyon CSV'sini yükle; irtifa, hız, stabilite, itki ve yörünge grafikleri, KPI kartları ve karşılaştırma. Dosya tarayıcıdan çıkmaz.",
+    category: "Uçuş & Aerodinamik",
+    icon: "lucide:chart-line",
+    status: "ready",
   },
   {
     slug: "atmosfer",

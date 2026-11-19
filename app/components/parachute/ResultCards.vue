@@ -43,5 +43,12 @@ const lim = computed(() => props.analysis.limits)
       <ParachuteStatCard icon="lucide:circle-dashed" label="Etkin alan (A)" :value="fmt(r.area, 3)" unit="m²" :sub="`CdA = ${fmt(r.cdA, 3)} m²`" />
       <ParachuteStatCard icon="lucide:weight" label="Ağırlık (W = m·g)" :value="fmt(r.weight, 1)" unit="N" :sub="`${fmt(r.totalMass, 2)} kg toplam kütle`" />
     </div>
+
+    <div class="panel flex flex-wrap items-center justify-between gap-3 !p-4">
+      <p class="text-sm text-zinc-400">Ø {{ fmt(analysis.inputs.d, 3) }} m nominal çap için dilim kesim kalıbını çıkarın.</p>
+      <NuxtLink :to="{ path: '/tools/parasut-olusturucu', query: { d: String(analysis.inputs.d) } }" class="btn">
+        <Icon name="lucide:scissors" size="16" /> Kalıp oluştur
+      </NuxtLink>
+    </div>
   </section>
 </template>
