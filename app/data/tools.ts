@@ -52,6 +52,15 @@ export const tools: Tool[] = [
     status: "ready",
   },
   {
+    slug: "pcb-hesaplayici",
+    name: "PCB Hesaplayıcı Paketi",
+    description:
+      "İz genişliği/akım (IPC-2221), via, empedans, ısıl ve devre yardımcıları.",
+    category: "Aviyonik",
+    icon: "lucide:circuit-board",
+    status: "ready",
+  },
+  {
     slug: "menzil",
     name: "Haberleşme Menzili",
     description: "Frekans ve güce göre tahmini menzil.",
